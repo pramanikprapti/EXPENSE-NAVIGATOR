@@ -1,0 +1,51 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Toast Notification Styles */
+.toast {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s, visibility 0.5s;
+    transform: translateY(20px);
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tab Styles */
+.tab-active {
+    border-color: #4f46e5; /* indigo-600 */
+    color: #4f46e5; /* indigo-600 */
+}
+
+/* Default Tab Styles (for JS to toggle) */
+#tab-expense, #tab-income {
+    color: #64748b; /* slate-500 */
+    border-color: transparent;
+}
+#tab-expense:hover, #tab-income:hover {
+    border-color: #cbd5e1; /* slate-300 */
+    color: #334155; /* slate-700 */
+}
